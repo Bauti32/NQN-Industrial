@@ -1,0 +1,161 @@
+body{
+background-image: url("fondo.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+nav{
+background-color: rgb(40,40,40);
+padding: 15px;
+text-align: center;
+}
+nav a{
+color: white;
+text-decoration: none;
+font-size: 20px;
+margin: 20px;
+}
+nav a:hover{
+color: yellow;
+}
+/* Indy */
+h1{
+color: darkblue;
+font-size: 50px;
+text-align: center;
+margin-top: 40px;
+}
+/* Párrafo */
+p{
+text-align: center;
+font-size: 22px;
+color: black;
+}
+/* Imagen */
+img{
+display: block;
+margin: auto;
+width: 400px;
+border-radius: 15px;
+border: 3px solid black;
+}
+
+/* Estilos generales de la página */
+body {
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: rgba(40, 40, 40, 0.9);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Contenedor principal con efecto de fondo difuminado (Glassmorphism) */
+.content-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.75); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(10px); /* Aplica el desenfoque al fondo */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Título y Párrafo */
+h1 {
+    color: #1a2a52;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Galería de Ítems (Grid responsivo) */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Tarjeta individual por ítem */
+.item-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 260px;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de cada ítem */
+.item-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Mini título del ítem */
+.item-card h3 {
+    margin: 15px 0 5px 0;
+    font-size: 18px;
+    color: #222;
+}
+
+/* --- Estilos para el botón interactivo --- */
+.btn-interactivo {
+ background-color: #1a2a52; /* Color azul oscuro que usamos en el título */
+ color: white;
+ padding: 12px 24px;
+ font-size: 18px;
+ border: none;
+ border-radius: 10px;
+ cursor: pointer;
+ display: block; /* Para poder centrarlo */
+ margin: 0 auto 30px auto; /* Lo centra y le da espacio abajo */
+ transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-interactivo:hover {
+ background-color: #ffcc00; /* Se vuelve amarillo al pasar el mouse */
+ color: #1a2a52;
+ transform: scale(1.05); /* Se agranda un poquito */
+}
